@@ -237,6 +237,8 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
 
 #myQuiz .active, #myQuiz .inactive { transition: all 1.5s cubic-bezier(0.74, -0.24, 0.24, 1.23); }
 #myQuiz .active { left: 50%; transform: translate(-50%, 0%); opacity: 1; }
+#myQuiz .astro.active { transform: translate(20%, -20%) !important; opacity: 1; width: 50vw; }
+#myQuiz .astro.active > svg { opacity: 1 !important; }
 #myQuiz .inactive.answered { left: -1350px; opacity: 0; }
 
 #myQuiz .progress-active, #myQuiz .progress-inactive { transition: all 1.5s cubic-bezier(0.74, -0.24, 0.24, 1.23); }
@@ -258,7 +260,7 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
 
 #myQuiz .astro-active, #myQuiz .astro-inactive, #myQuiz .astro > svg { transition: all 1.5s cubic-bezier(0.74, -0.24, 0.24, 1.23); }
 #myQuiz .astro-active { right: 30vw; opacity: 1; }
-#myQuiz .astro.astro-inactive { -webkit-transform: translate(650%, -20%); transform: translate(650%, -20%); }
+#myQuiz .astro.astro-inactive { transform: translate(650%, -20%); }
 #myQuiz .astro.astro-inactive > svg { opacity: 0; }
 
 #myQuiz .station-active, #myQuiz .station-inactive, #myQuiz .space-station > svg { transition: all 1.5s cubic-bezier(0.74, -0.24, 0.24, 1.23); }
