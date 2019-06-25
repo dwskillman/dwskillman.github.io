@@ -169,7 +169,7 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
 
 
 /* Intro */
-#myQuiz .intro { position: absolute; top: 10vw; left: -500px; width: 90vw; opacity: 0; z-index: 10; display: none;}
+#myQuiz .intro { position: absolute; top: 10vw; left: -500px; width: 90vw; opacity: 0; z-index: 10;}
 #myQuiz .intro p { margin: 0px 0px 40px 0px; }
 
 /* Questions */
