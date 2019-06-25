@@ -68,7 +68,7 @@ var data = [
 			{"id"  : 3, "text" : "National Laboratory Space"}
 		],
 		"correct"  : 2,
-		"feedback" : "In order for scientists to better understand our local solar system environment, the National Laboratory Meteor investigation allows for spectroscopic analysis of meteors as they enter the Earth’s upper atmosphere."
+		"feedback" : "For scientists to better understand our local solar system environment, the National Laboratory Meteor investigation takes high-resolution video and images of the atmosphere to search for bright spots that scientists can later analyze on the ground."
 	},
 	{
 		"question" : "The WORF's presence on the space station allows its sensors to image the same location or region __________________.",
