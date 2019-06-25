@@ -52,7 +52,7 @@
 
 			var url = 'https://dwskillman.github.io/interactive-quiz/';
 
-			var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored a '+percentage+' on this quiz about Saturn. Try to beat my score at '+url+'">Email a friend</a>';
+			var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored a '+percentage+' on this quiz about Art and Science on the Station. Try to beat my score at '+url+'">Email a friend</a>';
 
 			var twitterLink = '<a class="btn twitter" target="_blank" href="http://twitter.com/share?text=I scored a '+percentage+' on this quiz about Art and Science on the Station. Try to beat my score at&amp;hashtags=ArtAndScienceOnTheStation&amp;url='+url+'">Tweet your score</a>';
 
