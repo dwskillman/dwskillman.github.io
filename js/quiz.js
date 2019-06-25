@@ -50,7 +50,7 @@
 
 		$scope.createShareLinks = function(percentage){
 
-			var url = 'http://codifydesign.com';
+			var url = 'https://dwskillman.github.io/interactive-quiz/';
 
 			var emailLink = '<a class="btn email" href="mailto:?subject=Try to beat my quiz score!&amp;body=I scored a '+percentage+' on this quiz about Saturn. Try to beat my score at '+url+'">Email a friend</a>';
 
