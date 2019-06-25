@@ -215,7 +215,7 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
 
 /* Results */
 
-#myQuiz .results { position: absolute; top: 30vh; left: 50vw; width: 550px; }
+#myQuiz .results { position: absolute; top: 130vh; left: 50vw; width: 550px; opacity: 0; }
 
 #myQuiz .results .share { margin-top: 40px }
 
