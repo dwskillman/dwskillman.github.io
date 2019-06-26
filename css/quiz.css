@@ -56,13 +56,37 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
-  background: #0c3ba5;
+  background: #2468ce;
   opacity: 0;
   z-index: 1;
-  overflow: hidden;
 }
 
-.earth-globe .map-vector svg path {
+#myQuiz .earth-globe #satellite {
+  position: absolute;
+  z-index: 1000;
+  animation: rot 6.9s infinite linear
+}
+
+.st1 { fill: #1B75BC;}
+
+.st5 { fill: #2B3990; stroke: #000000; stroke-width: 3; stroke-miterlimit: 10; }
+
+.st6 { fill: #939598; stroke: #000000; stroke-width: 3; stroke-miterlimit: 10; }
+
+.st7 { fill: #00AEEF; }
+
+.st8 { fill: #00A79D; }
+
+.st9 { fill: #262262; }
+
+.st10 { fill: #303077; }
+
+@keyframes rot {
+  from { transform: rotate(0deg) translate(30vh) rotate(0deg); }
+  to { transform: rotate(360deg) translate(30vh) rotate(-360deg); }
+}
+
+.earth-globe .map-vector #vector_map path {
   fill: #3bb184
 }
 
@@ -70,11 +94,13 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
   position: absolute;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-.earth-globe svg {
+.earth-globe #vector_map {
   position: absolute;
-  fill: green;
+  fill: #3fbb7a;
   top: 15px;
   width: 340%;
   left: -180%;
@@ -87,7 +113,7 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
   width: 105%;
   height: 105%;
   border-radius: 50%;
-  box-shadow: inset -5vw -4vw 0 0 rgba(3, 0, 22,.98);
+  box-shadow: inset -5vw -4vw 0 0 rgba(3, 0, 22,.75);
 }
 
 @keyframes globeSpin {
@@ -148,6 +174,14 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
   right: -50vw;
   opacity: 0;
   z-index: 1;
+  animation: movinStation 15s ease-in-out infinite;
+  animation-delay: .5s;
+}
+
+@keyframes  movinStation {
+  0%   { transform: rotate(0deg) }
+  50%  { transform: rotate(5deg) }
+  100% { transform: rotate(0deg) }
 }
 
 /* Progress Bar */
@@ -253,10 +287,10 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
 #myQuiz .stars-active { transform: translate(-25%, 13%) scale(1.4); opacity: .3}
 #myQuiz .stars.stars-inactive { -webkit-transform: translate(10%, 13%) scale(1); transform: translate(10%, 13%) scale(1); }
 
-#myQuiz .earth-active, #myQuiz .earth-inactive, #myQuiz .earth-globe > svg { transition: all 1.5s cubic-bezier(0.74, -0.24, 0.24, 1.23); }
+#myQuiz .earth-active, #myQuiz .earth-inactive, #myQuiz .earth-globe > #vector_map { transition: all 1.5s cubic-bezier(0.74, -0.24, 0.24, 1.23); }
 #myQuiz .earth-active { right: 5vw; opacity: 1; }
 #myQuiz .earth-globe.earth-inactive { -webkit-transform: translate3d(350%, -50%, 0); transform: translate3d(350%, -50%, 0); }
-#myQuiz .earth-globe.earth-inactive > svg { opacity: 0; }
+#myQuiz .earth-globe.earth-inactive > #vector_map { opacity: 0; }
 
 #myQuiz .astro-active, #myQuiz .astro-inactive, #myQuiz .astro > svg { transition: all 1.5s cubic-bezier(0.74, -0.24, 0.24, 1.23); }
 #myQuiz .astro-active { right: 30vw; opacity: 1; }
@@ -299,11 +333,21 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
   #myQuiz .astro-active {
     width: 20vw;
   }
+
+  @keyframes rot {
+    from { transform: rotate(0deg) translate(28vh) rotate(0deg); }
+    to { transform: rotate(360deg) translate(28vh) rotate(-360deg); }
+  }
 }
 
 @media only screen and (min-width: 992px) {
   #myQuiz .question {
     width: 50.5vw;
+  }
+
+  @keyframes rot {
+    from { transform: rotate(0deg) translate(30vh) rotate(0deg); }
+    to { transform: rotate(360deg) translate(30vh) rotate(-360deg); }
   }
 }
 
@@ -314,5 +358,10 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
   }
   #myQuiz .astro-active {
     width: 15vw;
+  }
+
+  @keyframes rot {
+    from { transform: rotate(0deg) translate(32vh) rotate(0deg); }
+    to { transform: rotate(360deg) translate(32vh) rotate(-360deg); }
   }
 }
