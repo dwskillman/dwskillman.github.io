@@ -335,8 +335,8 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
   }
 
   @keyframes rot {
-    from { transform: rotate(0deg) translate(28vh) rotate(0deg); }
-    to { transform: rotate(360deg) translate(28vh) rotate(-360deg); }
+    from { transform: rotate(0deg) translate(20vh) rotate(0deg); }
+    to { transform: rotate(360deg) translate(20vh) rotate(-360deg); }
   }
 }
 
@@ -346,8 +346,8 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
   }
 
   @keyframes rot {
-    from { transform: rotate(0deg) translate(30vh) rotate(0deg); }
-    to { transform: rotate(360deg) translate(30vh) rotate(-360deg); }
+    from { transform: rotate(0deg) translate(24vh) rotate(0deg); }
+    to { transform: rotate(360deg) translate(24vh) rotate(-360deg); }
   }
 }
 
@@ -361,7 +361,7 @@ body { background-color: #14103D; padding: 0px; margin: 0px; overflow: hidden;}
   }
 
   @keyframes rot {
-    from { transform: rotate(0deg) translate(32vh) rotate(0deg); }
-    to { transform: rotate(360deg) translate(32vh) rotate(-360deg); }
+    from { transform: rotate(0deg) translate(26vh) rotate(0deg); }
+    to { transform: rotate(360deg) translate(26vh) rotate(-360deg); }
   }
 }
